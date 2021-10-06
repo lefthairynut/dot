@@ -393,3 +393,4 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias updatedb='sudo updatedb'
+export TERMINAL='/usr/bin/konsole'
