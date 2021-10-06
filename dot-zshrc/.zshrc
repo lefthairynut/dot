@@ -102,17 +102,13 @@ source $ZSH/oh-my-zsh.sh
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-autopair/autopair.plugin.zsh
 setopt GLOB_DOTS
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 export HISTCONTROL=ignoreboth:erasedups
-
-# Make nano the default editor
-
-export EDITOR='vim'
-export VISUAL='vim'
 
 #PS1='[\u@\h \W]\$ '
 
@@ -389,8 +385,8 @@ alias personal='cp -Rf /personal/* ~'
 #hfetch
 # install lolcat
 #sfetch | lolcat
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias updatedb='sudo updatedb'
-export TERMINAL='/usr/bin/konsole'
+alias manb="man -H$MAN_BROWSER"
+unalias ls

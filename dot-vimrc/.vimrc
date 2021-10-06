@@ -1,5 +1,5 @@
-inoremap <F5> <ESC>:w<CR>:! clear; python ./%<CR>
-noremap <F5> <ESC>:w<CR>:! clear; python ./%<CR>
+inoremap <F5> <ESC>:w<CR>:! clear; ./%<CR>
+noremap <F5> <ESC>:w<CR>:! clear; ./%<CR>
 set hidden
 set encoding=utf-8
 if exists('+termguicolors')
