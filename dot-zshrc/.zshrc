@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 
 ####   ARCOLINUX SETTINGS   ####
 
-
+#source /usr/share/zsh/site-functions/
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-autopair/autopair.plugin.zsh
@@ -322,27 +322,35 @@ alias xd="ls /usr/share/xsessions"
 # # usage: ex <file>
 ex ()
 {
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *.deb)       ar x $1      ;;
-      *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   tar xf $1    ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
+    exdir="$(basename $1 | sed 's/\..*//')"
+    rpath="$(realpath $1)"
+    mkdir $exdir
+    cd $exdir
+
+    if [ -f $rpath ] ; then
+        case $rpath in
+              
+          *.tar.bz2)   tar xjf $rpath   ;;
+          *.tar.gz)    tar xzf $rpath   ;;
+          *.bz2)       bunzip2 $rpath   ;;
+          *.rar)       unrar x $rpath   ;;
+          *.gz)        gunzip $rpath    ;;
+          *.tar)       tar xf $rpath    ;;
+          *.tbz2)      tar xjf $rpath   ;;
+          *.tgz)       tar xzf $rpath   ;;
+          *.zip)       unzip $rpath ;;
+          *.Z)         uncompress $rpath;;
+          *.7z)        7z x $rpath      ;;
+          *.deb)       ar x $rpath      ;;
+          *.tar.xz)    tar xf $rpath    ;;
+          *.tar.zst)   tar xf $rpath    ;;
+          *)           echo "'$rpath' cannot be extracted via ex()" ;;
+              
+        esac  
+              
+    else      
+        echo "'$1' is not a valid file"
+    fi        
 }
 
 #arcolinux applications
@@ -387,6 +395,6 @@ alias personal='cp -Rf /personal/* ~'
 #sfetch | lolcat
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-alias updatedb='sudo updatedb'
+alias updatedb='sudo updatedb -v'
 alias manb="man -H$MAN_BROWSER"
 unalias ls
