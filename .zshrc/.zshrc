@@ -398,3 +398,20 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias updatedb='sudo updatedb -v'
 alias manb="man -H$MAN_BROWSER"
 unalias ls
+alias i='sudo pacman -S'
+alias s='source ~/.zshrc'
+alias ll='ls -al'
+upload ()
+{
+    curl -F "file=@"$(basename $1)"" http://0x0.st
+}
+
+uploadweb ()
+{
+    curl -F "url="$1"" http://0x0.st
+}
+
+cht()
+{
+    cht.sh $1 | less
+}
