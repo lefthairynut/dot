@@ -120,3 +120,15 @@ aug end
 " imap <buffer> ;; <C-O>/%%%<CR><C-O>c3l
 " nmap <buffer> ;; /%%%<CR>c3l
 " let g:vcoolor_map = '<C-c>'
+"
+" ---------------- Dracula Pro configs ----------------------------
+"packadd! dracula_pro
+"
+"syntax enable
+"
+"let g:dracula_colorterm = 0
+"
+"colorscheme dracula_pro
+" ------------------------------------------------------------------
+
+au BufWritePost * if &syntax == '' | :filetype detect | endif
