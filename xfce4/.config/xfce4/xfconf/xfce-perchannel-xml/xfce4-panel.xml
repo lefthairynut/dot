@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=683;y=16"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="22"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="3"/>
+        <value type="int" value="15"/>
+        <value type="int" value="10"/>
+        <value type="int" value="4"/>
+        <value type="int" value="6"/>
+        <value type="int" value="8"/>
+        <value type="int" value="5"/>
+      </property>
+      <property name="background-alpha" type="uint" value="76"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="icon-size" type="uint" value="22"/>
+    </property>
+    <property name="dark-mode" type="bool" value="true"/>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-3" type="string" value="tasklist"/>
+    <property name="plugin-15" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="true"/>
+    </property>
+    <property name="plugin-5" type="string" value="clock">
+      <property name="mode" type="uint" value="4"/>
+      <property name="show-meridiem" type="bool" value="false"/>
+      <property name="show-military" type="bool" value="true"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="names-visible" type="array">
+        <value type="string" value="evolution-alarm-notify"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="pragha music player"/>
+        <value type="string" value="simplescreenrecorder"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="insync.py"/>
+        <value type="string" value="telegramdesktop"/>
+        <value type="string" value="variety"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="bluetooth"/>
+        <value type="string" value="clipman"/>
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="scp-dbus-service.py"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="gpick"/>
+        <value type="string" value="clipit"/>
+        <value type="string" value="dropbox"/>
+      </property>
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="zoom"/>
+        <value type="string" value="simplescreenrecorder"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="xfce terminal"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="dropbox"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="insync"/>
+        <value type="string" value="variety"/>
+        <value type="string" value="telegramdesktop"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="clipman"/>
+      </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="gpick"/>
+        <value type="string" value="system-config-printer"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="goldendict"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="javaembeddedframe"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="clipman"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="networkmanager applet"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="superProductivity1"/>
+        <value type="string" value="Syncthing Tray"/>
+        <value type="string" value="flow"/>
+        <value type="string" value="hp-systray"/>
+        <value type="string" value="smplayer"/>
+        <value type="string" value="QSyncthingTray"/>
+        <value type="string" value="GoldenDict"/>
+        <value type="string" value="discord1"/>
+        <value type="string" value="qBittorrent"/>
+        <value type="string" value="Mailspring1"/>
+        <value type="string" value="persepolis"/>
+        <value type="string" value="freezer1"/>
+        <value type="string" value="TelegramDesktop"/>
+        <value type="string" value="KDE Connect Indicator"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="variety"/>
+      </property>
+      <property name="hidden-legacy-items" type="array">
+      </property>
+    </property>
+    <property name="clipman" type="empty">
+      <property name="tweaks" type="empty">
+        <property name="never-confirm-history-clear" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance14511;chromium.instance1737;chromium.instance18402;chromium.instance18904;chromium.instance2290;chromium.instance2715;chromium.instance3736;chromium.instance4238;chromium.instance46943;chromium.instance63917;chromium.instance7716;chromium.instance8789;firefox.instance11494;firefox.instance11820;firefox.instance1277;firefox.instance13215;firefox.instance13303;firefox.instance1400;firefox.instance14668;firefox.instance16556;firefox.instance1758;firefox.instance18098;firefox.instance1832;firefox.instance1867;firefox.instance19107;firefox.instance20842;firefox.instance2171;firefox.instance2224;firefox.instance2392;firefox.instance24421;firefox.instance2445;firefox.instance24614;firefox.instance2515;firefox.instance27359;firefox.instance3175;firefox.instance4201;firefox.instance4380;firefox.instance4402;firefox.instance4674;firefox.instance5070;firefox.instance8874;firefox.instance9116;firefox.instance9606;firefox.instance9719;firefox.instance9813;Gwenview;Gwenview.instance22815;Gwenview.instance4295;Gwenview.instance4309;Gwenview.instance5887;Gwenview.instance5905;Gwenview.instance5922;Gwenview.instance5946;Gwenview.instance5962;Gwenview.instance5980;kdeconnect.mpris_3a7544b39e174bcbbdfc2a2201517153;kdeconnect.mpris_ac608447351549ea88d6b037e96f0183;kdeconnect.mpris_bccf34c40a364cebaab342aeb6199d8c;kdeconnect.mpris_d6c1be95a2bf4beb805c872d084ebf35;kdeconnect.mpris_e1255d594b5d4191a2dd3b972c44d275;kdeconnect.mpris_e219aafb02c9417c9e158a8104f93ed4;kdeconnect.mpris_e3bb967daa104f62a5b04f746747eaad;kdeconnect.mpris_efc1d530b7644977affb3c0507df311a;kdeconnect.mpris_f4170acfcd7b47659ab3dc2b1fc74da5;pragha;smplayer;spotify;tdesktop;vlc;vlc.instance15379;vlc.instance16089;vlc.instance20329;vlc.instance25046;vlc.instance25778;vlc.instance25894;vlc.instance25992;vlc.instance26092;vlc.instance26163;vlc.instance26229;vlc.instance27008;vlc.instance27497;vlc.instance3056;vlc.instance3570"/>
+    </property>
+    <property name="plugin-1" type="string" value="whiskermenu"/>
+    <property name="plugin-10" type="string" value="netload"/>
+  </property>
+</channel>
