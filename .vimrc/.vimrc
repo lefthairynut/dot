@@ -38,7 +38,7 @@ set smartindent
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
+call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -80,6 +80,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
+Plugin 'gruvbox-community/gruvbox'
 " Plugin 'mboughaba/i3config.vim'
 " Plugin 'ycm-core/YouCompleteMe'
 " Plugin 'noahfrederick/vim-skeleton'
@@ -92,7 +93,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " Plugin 'chrisbra/Colorizer'
 " Plugin 'lilydjwg/colorizer' 
 
-" call vundle#end()            " required
+call vundle#end()            " required
+"colorscheme gruvbox
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on

@@ -1,1 +1,2 @@
 xfce4/** filter=git-crypt diff=git-crypt
+syncthing/** filter=git-crypt diff=git-crypt

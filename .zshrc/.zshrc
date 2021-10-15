@@ -106,20 +106,15 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-autopair/autopair.plugin.zsh
 setopt GLOB_DOTS
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-export HISTCONTROL=ignoreboth:erasedups
-
 #PS1='[\u@\h \W]\$ '
 
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
 fi
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
-fi
+#if [ -d "$HOME/.local/bin" ] ;
+#  then PATH="$HOME/.local/bin:$PATH"
+#fi
 
 #list
 #alias ls='ls --color=auto'
@@ -345,6 +340,7 @@ ex ()
           *.deb)       ar x $rpath      ;;
           *.tar.xz)    tar xf $rpath    ;;
           *.tar.zst)   tar xf $rpath    ;;
+          *.rar)        unrar x $rpath   ;;
           *)           echo "'$rpath' cannot be extracted via ex()" ;;
               
         esac  
@@ -396,12 +392,6 @@ alias personal='cp -Rf /personal/* ~'
 #sfetch | lolcat
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-alias updatedb='sudo updatedb -v'
-alias manb="man -H$MAN_BROWSER"
-unalias ls
-alias i='sudo pacman -S'
-alias s='source ~/.zshrc'
-alias ll='ls -al'
 upload ()
 {
     curl -F "file=@"$(basename $1)"" http://0x0.st
@@ -417,3 +407,22 @@ cht()
     cht.sh $1 | less
 }
 #. /usr/share/LS_COLORS/dircolors.sh
+alias updatedb='sudo updatedb -v'
+alias manb="man -H$MAN_BROWSER"
+alias i='sudo pacman -S'
+alias ll='ls -al'
+
+setopt autocd
+
+alias -g ls=exa
+alias e="$EDITOR $HOME/.zshrc"
+alias z="$EDITOR $HOME/.zprofile"
+alias s="source $HOME/.zshrc"
+alias j='cd /mnt/JESUS'
+music()
+{
+    IFS=$'\n'; vlc $(realpath $(find /mnt/JESUS/Music -type f -name '*.mp3')) > /dev/null 2>&1 &
+    disown
+}
+alias cheatp='cheat -p community'
+alias cheatn='cheat -e'
