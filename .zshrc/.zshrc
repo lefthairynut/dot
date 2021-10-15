@@ -426,3 +426,6 @@ music()
 }
 alias cheatp='cheat -p community'
 alias cheatn='cheat -e'
+alias lsblk='lsblk -o label,name,mountpoint,size,uuid'
+
+alias ixio="curl -F 'f:1=<-' ix.io"
