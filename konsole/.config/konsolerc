@@ -5,9 +5,7 @@ DefaultProfile=Personal.profile
 ShowMenuBarByDefault=false
 
 [MainWindow]
-LVDS-1 Window-Maximized 1366x768=true
-RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAABVIAAAKoAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAA==
+MenuBar=Disabled
 StatusBar=Disabled
 ToolBarsMovable=Disabled
 
