@@ -1,3 +1,5 @@
+StatusBar=Disabled
+
 [Desktop Entry]
 DefaultProfile=Personal.profile
 
@@ -6,6 +8,7 @@ ShowMenuBarByDefault=false
 
 [MainWindow]
 MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABVIAAALHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAA==
 StatusBar=Disabled
 ToolBarsMovable=Disabled
 
